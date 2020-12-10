@@ -1,1 +1,3 @@
-console.log("I'M IN");
+import { loadPage } from "./initial_page.js";
+
+loadPage();

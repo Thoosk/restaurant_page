@@ -95,7 +95,16 @@ body {
   text-decoration: none;
   font-family: "Racing Sans One";
   color: #fad02c;
-  padding: 10px 20px 10px 10px;
+  padding: 10px 30px 10px 20px;
+  border-left: #fad02c solid 2px;
+
+  opacity: 0.3;
+  transition: 0.7s ease;
+}
+
+#header a:hover {
+  opacity: 1;
+  transition: 0.7s ease;
 }
 
 #header h1 {
@@ -155,12 +164,14 @@ body {
   height: 5rem;
   background-color: #282120;
   border-top: #fad02c solid 2px;
-  color: white;
+  color: #ffff;
   text-align: end;
   font-size: 1.5rem;
+  padding: 0.5rem 1rem 0 0;
 }
 
 #footer img {
+  margin: 0.2rem 2rem 0 0;
   width: 2rem;
   height: 2rem;
 }
