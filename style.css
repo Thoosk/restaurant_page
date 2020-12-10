@@ -1,0 +1,166 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* RESET */
+/* prettier-ignore */
+html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 62.5%;
+        font: inherit;
+        font-family: Bookman, URW Bookman L, serif ;
+        vertical-align: baseline;
+    }
+/* HTML5 display-role reset for older browsers */
+/* prettier-ignore */
+article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500&display=swap");
+
+body {
+  min-height: 100vh;
+  height: 100vh;
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 10rem;
+  background-color: #282120;
+  border-bottom: #fad02c solid 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#navbar {
+  display: flex;
+  align-self: start;
+  font-size: 4rem;
+  font-family: "Racing Sans One";
+}
+
+#header a {
+  text-decoration: none;
+  font-family: "Racing Sans One";
+  color: #fad02c;
+  padding: 10px 20px 10px 10px;
+}
+
+#header h1 {
+  margin: 1rem 0 0 0.5rem;
+  color: #fad02c;
+  font-size: 4rem;
+  font-family: "Racing Sans One";
+  letter-spacing: 1.2rem;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  margin-top: 10rem;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#main h1 {
+  position: relative;
+  color: #ffffff;
+  font-size: 10rem;
+  line-height: 0.9;
+  text-align: center;
+}
+
+#main p {
+  position: relative;
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 2;
+  margin-left: 10rem;
+}
+
+#main::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url(/src/images/bckgrd_gs.jpg);
+  filter: blur(15px);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: cover;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+#footer {
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+  height: 5rem;
+  background-color: #282120;
+  border-top: #fad02c solid 2px;
+  color: white;
+  text-align: end;
+  font-size: 1.5rem;
+}
+
+#footer img {
+  width: 2rem;
+  height: 2rem;
+}
