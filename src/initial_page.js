@@ -94,4 +94,4 @@ function loadPage() {
   content.appendChild(footer_div);
 }
 
-export { loadPage };
+export { loadPage, createFooter, createHeader };

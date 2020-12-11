@@ -175,3 +175,46 @@ body {
   width: 2rem;
   height: 2rem;
 }
+
+/* menu site */
+
+#menu {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#menu img {
+  width: 10rem;
+  height: 10rem;
+
+  position: relative;
+}
+
+#menu h1 {
+  font-size: 3rem;
+}
+
+#menu p {
+  font-size: 1 rems;
+}
+
+#coffee {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+}
+
+#food .item {
+  display: flex;
+  flex-direction: row-reverse;
+}
