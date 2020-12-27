@@ -146,7 +146,7 @@ body {
   width: 100%;
   height: 100%;
   content: "";
-  background-image: url(/src/images/bckgrd_gs.jpg);
+  background-image: url(../src/images/bckgrd_gs.jpg);
   filter: blur(15px);
   background-repeat: no-repeat;
   position: absolute;
@@ -184,21 +184,30 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  color: white;
 }
 
-#menu img {
-  width: 10rem;
-  height: 10rem;
-
-  position: relative;
+.coffee-img {
+  width: 55rem;
+  height: 40rem;
+  position: absolute;
+  margin-top: 10rem;
+  border-radius: 25%;
+  opacity: 0.8;
 }
 
 #menu h1 {
   font-size: 3rem;
+  text-align: left;
+}
+
+#menu h2 {
+  font-size: 2rem;
+  z-index: 100;
 }
 
 #menu p {
-  font-size: 1 rems;
+  font-size: 1rem;
 }
 
 #coffee {
@@ -214,7 +223,47 @@ body {
   display: flex;
 }
 
+#food {
+  margin-top: -5rem;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 #food .item {
   display: flex;
   flex-direction: row-reverse;
+}
+
+#food img {
+  width: 20rem;
+  height: 15rem;
+  position: absolute;
+  margin-top: 3rem;
+  border-radius: 100%;
+}
+
+#food p {
+  margin-right: 2rem;
+  font-size: 1.5rem;
+}
+
+#contact {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#basic {
+  display: flex;
+  flex-direction: column;
+}
+
+#map {
+  right: 0;
+  height: 30rem;
+  width: 40%;
 }
