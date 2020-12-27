@@ -5,15 +5,15 @@ function createHeader() {
   nav.setAttribute("id", "navbar");
   const about = document.createElement("a");
   about.classList.add("nav-link");
-  about.setAttribute("href", "#about");
+  // about.setAttribute("href", "#about");
   about.innerHTML = "about";
   const menu = document.createElement("a");
   menu.classList.add("nav-link");
-  menu.setAttribute("href", "#menu");
+  // menu.setAttribute("href", "#menu");
   menu.innerHTML = "menu";
   const contact = document.createElement("a");
   contact.classList.add("nav-link");
-  contact.setAttribute("href", "#contact");
+  // contact.setAttribute("href", "#contact");
   contact.innerHTML = "contact";
 
   nav.appendChild(about);
@@ -92,6 +92,30 @@ function loadPage() {
     footer_div.appendChild(footer[el]);
   }
   content.appendChild(footer_div);
+  console.log("test");
 }
 
-export { loadPage, createFooter, createHeader };
+function onlyMainAbout() {
+  const main_div = document.createElement("div");
+  main_div.setAttribute("id", "main");
+  const main = createMain();
+  for (const el in main) {
+    main_div.appendChild(main[el]);
+  }
+  return main_div;
+}
+// const headerEvent = Array.from(document.querySelectorAll(".nav-link"));
+// console.log(headerEvent);
+// headerEvent.forEach((e) => {
+//   e.addEventListener("click", () => {
+//     console.log("hello");
+//   });
+// });
+
+// const singleHeader = document.querySelector(".nav-link");
+// console.log(singleHeader);
+// headerEvent.addEventListener("click", (event) => {
+//   console.log(event);
+// });
+
+export { loadPage, createFooter, createHeader, onlyMainAbout };
