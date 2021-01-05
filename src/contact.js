@@ -1,5 +1,3 @@
-import { createHeader, createFooter } from "./initial_page.js";
-
 // Initialize and add the map
 function initMap() {
   // The location of Cafe Wolf
@@ -16,7 +14,6 @@ function initMap() {
     map: map,
   });
 }
-// window.initMap = initMap;
 
 function createMain() {
   const contact = document.createElement("div");
@@ -42,40 +39,7 @@ function createMain() {
   contact.appendChild(basic);
   contact.appendChild(mapEl);
 
-  // initMap();
-
   return { contact };
-}
-
-function loadPageContact() {
-  const content = document.getElementById("content");
-
-  //header
-  const header_div = document.createElement("div");
-  header_div.setAttribute("id", "header");
-  const header = createHeader();
-  for (const el in header) {
-    header_div.appendChild(header[el]);
-  }
-  content.appendChild(header_div);
-
-  //main
-  const main_div = document.createElement("div");
-  main_div.setAttribute("id", "main");
-  const main = createMain();
-  for (const el in main) {
-    main_div.appendChild(main[el]);
-  }
-  content.appendChild(main_div);
-
-  //footer
-  const footer_div = document.createElement("div");
-  footer_div.setAttribute("id", "footer");
-  const footer = createFooter();
-  for (const el in footer) {
-    footer_div.appendChild(footer[el]);
-  }
-  content.appendChild(footer_div);
 }
 
 function onlyMainCont() {
@@ -91,4 +55,4 @@ function onlyMainCont() {
   // content.appendChild(main_div);
 }
 
-export { createMain, loadPageContact, initMap, onlyMainCont };
+export { createMain, initMap, onlyMainCont };

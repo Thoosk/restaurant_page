@@ -10,7 +10,6 @@ addListeners();
 function changeTab(clickedPage) {
   const content = document.getElementById("content");
 
-  console.log(content.lastElementChild);
   content.firstElementChild.nextElementSibling.remove();
 
   switch (clickedPage) {
@@ -19,16 +18,12 @@ function changeTab(clickedPage) {
       break;
     case "menu":
       content.insertBefore(onlyMainMenu(), content.lastElementChild);
-      // content.lastElementChild.insertBefore(onlyMain());
-      // onlyMain();
       break;
     case "contact":
       content.insertBefore(onlyMainCont(), content.lastElementChild);
-      // loadPageContact();
       initMap();
       break;
   }
-  // addListeners();
 }
 
 function addListeners() {
@@ -36,7 +31,6 @@ function addListeners() {
 
   headerEvent.forEach((e) => {
     e.addEventListener("click", () => {
-      //   console.log(e.textContent);
       changeTab(e.textContent);
     });
   });

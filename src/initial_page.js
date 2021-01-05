@@ -5,15 +5,12 @@ function createHeader() {
   nav.setAttribute("id", "navbar");
   const about = document.createElement("a");
   about.classList.add("nav-link");
-  // about.setAttribute("href", "#about");
   about.innerHTML = "about";
   const menu = document.createElement("a");
   menu.classList.add("nav-link");
-  // menu.setAttribute("href", "#menu");
   menu.innerHTML = "menu";
   const contact = document.createElement("a");
   contact.classList.add("nav-link");
-  // contact.setAttribute("href", "#contact");
   contact.innerHTML = "contact";
 
   nav.appendChild(about);
@@ -41,9 +38,9 @@ function createFooter() {
   //FB LINK
   const a_fb = document.createElement("a");
   const img_fb = document.createElement("img");
-  img_fb.setAttribute("src", "/src/images/facebook-3-16.png");
+  img_fb.setAttribute("src", "../src/images/facebook-3-16.png");
   Object.assign(a_fb, {
-    href: "",
+    href: "https://www.facebook.com/cafewolfgraz",
     className: "profile-link",
     target: "_blank",
   });
@@ -52,9 +49,9 @@ function createFooter() {
   //IG LINK
   const a_ig = document.createElement("a");
   const img_ig = document.createElement("img");
-  img_ig.setAttribute("src", "/src/images/instagram-16.png");
+  img_ig.setAttribute("src", "../src/images/instagram-16.png");
   Object.assign(a_ig, {
-    href: "",
+    href: "https://www.instagram.com/cafewolfgraz/",
     className: "profile-link",
     target: "_blank",
   });
@@ -104,18 +101,5 @@ function onlyMainAbout() {
   }
   return main_div;
 }
-// const headerEvent = Array.from(document.querySelectorAll(".nav-link"));
-// console.log(headerEvent);
-// headerEvent.forEach((e) => {
-//   e.addEventListener("click", () => {
-//     console.log("hello");
-//   });
-// });
-
-// const singleHeader = document.querySelector(".nav-link");
-// console.log(singleHeader);
-// headerEvent.addEventListener("click", (event) => {
-//   console.log(event);
-// });
 
 export { loadPage, createFooter, createHeader, onlyMainAbout };

@@ -188,8 +188,8 @@ body {
 }
 
 .coffee-img {
-  width: 55rem;
-  height: 40rem;
+  height: 30rem;
+  width: 45rem;
   position: absolute;
   margin-top: 10rem;
   border-radius: 25%;
@@ -238,8 +238,8 @@ body {
 }
 
 #food img {
-  width: 20rem;
-  height: 15rem;
+  width: 10rem;
+  height: 10rem;
   position: absolute;
   margin-top: 3rem;
   border-radius: 100%;
