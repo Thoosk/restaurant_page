@@ -146,7 +146,7 @@ body {
   width: 100%;
   height: 100%;
   content: "";
-  background-image: url(../src/images/bckgrd_gs.jpg);
+  background-image: url(src/images/bckgrd_gs.jpg);
   filter: blur(15px);
   background-repeat: no-repeat;
   position: absolute;
